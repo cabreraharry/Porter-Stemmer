@@ -6,6 +6,7 @@ import sys
 
 
 class PorterStemmer:
+
     def isCons(self, letter):#function that returns true if a letter is a consonant otherwise false
         if letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o'or letter == 'u':
             return False
@@ -422,8 +423,8 @@ def stem_text(text):
 # Define the stem_text function or import it from a module
 # Assuming you have a function called stem_text defined elsewhere in your code.
 
-input_file_path = "C:\\Users\\ACER\\Porter-Stemmer\\4-cols_15k-rows.csv"
-output_file_path = "C:\\Users\\ACER\\Porter-Stemmer\\output_n.csv"
+input_file_path = "4-cols_15k-rows.csv"
+output_file_path = "stemmed_dataset_15k-rows_cabrera-harryericson.csv"
 
 try:
     with open(input_file_path, 'r', encoding='utf-8') as input_file, open(output_file_path, 'w', newline='', encoding='utf-8') as output_file:
